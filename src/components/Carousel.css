@@ -1,1 +1,97 @@
 /* write your carousel css in this file */
+/* write your carousel css in this file */
+body {
+    background-color: blue;
+    font-family: Arial, sans-serif; 
+    color: white;
+  }
+  
+  .carousel {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 20px; 
+    box-sizing: border-box; 
+  }
+  
+  .image-container {
+    position: relative;
+    width: 40%;
+    overflow: hidden; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease; 
+  }
+  
+  .image-container:hover {
+    transform: scale(1.05); 
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    transition: opacity 0.3s ease; 
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: white;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1; 
+  }
+  
+  .title-box {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px; 
+    width: 35%;
+    text-align: center;
+    margin-left: 32.5%; 
+    font-weight: bolder;
+    color: black;
+    margin-top: -1px;
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .subtitle-box {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 15px;
+    width: 50%;
+    height: 10%;
+    text-align: center;
+    margin-left: 25%; 
+    font-weight: bolder;
+    color: black;
+    justify-content: center;
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .title {
+    margin-top: 50%;
+    font-size: 24px; 
+    letter-spacing: 1px; 
+  }
+  
+  .subtitle {
+    margin: 0;
+    font-size: 18px; 
+    letter-spacing: 0.5px; 
+  }
+  
